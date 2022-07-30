@@ -14,7 +14,8 @@ import { RegistrationComponent } from './step/registration/registration.componen
 import { TrainingComponent } from './step/training/training.component';
 import { UserComponent } from './user/user.component';
 import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
-import { UserLoginComponent } from './user/user-login/user-login.component'
+import { UserLoginComponent } from './user/user-login/user-login.component';
+import { FooterComponent } from './footer/footer.component'
 
 
 
@@ -31,7 +32,8 @@ import { UserLoginComponent } from './user/user-login/user-login.component'
     TrainingComponent,
     UserComponent,
     UserRegistrationComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    FooterComponent
   ],
   
   imports: [
