@@ -10,6 +10,7 @@ body {
     border-bottom: 1px solid #ccc;
     padding: .8em 1em;
     background-color: bisque;
+    box-shadow: bisque;
   }
   
   .site-header::after {

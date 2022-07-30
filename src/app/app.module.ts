@@ -7,6 +7,12 @@ import { AppComponent } from './app.component';
 import { StepComponent } from './step/step.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './step/login/login.component';
+import { GuidelinesComponent } from './step/guidelines/guidelines.component';
+import { RegistrationComponent } from './step/registration/registration.component';
+import { TrainingComponent } from './step/training/training.component'
+
 
 
 @NgModule({
@@ -15,11 +21,18 @@ import { MainComponent } from './main/main.component';
     StepComponent,
     HeaderComponent,
     MainComponent,
+  
+    LoginComponent,
+    GuidelinesComponent,
+    RegistrationComponent,
+    TrainingComponent
   ],
   
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

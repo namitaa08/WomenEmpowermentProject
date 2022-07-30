@@ -1,0 +1,17 @@
+#background {
+    width: 100%;
+    background: url('https://imgnew.outlookindia.com/public/uploads/articles/2017/5/10/AIRFORCE.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+table tr td{
+    line-height: 1.6em;
+    text-align: justify;
+}
+
+img{
+    width: 100%
+}
