@@ -11,7 +11,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './step/login/login.component';
 import { GuidelinesComponent } from './step/guidelines/guidelines.component';
 import { RegistrationComponent } from './step/registration/registration.component';
-import { TrainingComponent } from './step/training/training.component'
+import { TrainingComponent } from './step/training/training.component';
+import { UserComponent } from './user/user.component';
+import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
+import { UserLoginComponent } from './user/user-login/user-login.component'
 
 
 
@@ -25,7 +28,10 @@ import { TrainingComponent } from './step/training/training.component'
     LoginComponent,
     GuidelinesComponent,
     RegistrationComponent,
-    TrainingComponent
+    TrainingComponent,
+    UserComponent,
+    UserRegistrationComponent,
+    UserLoginComponent
   ],
   
   imports: [
