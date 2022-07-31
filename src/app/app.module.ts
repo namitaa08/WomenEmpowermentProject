@@ -13,10 +13,12 @@ import { GuidelinesComponent } from './step/guidelines/guidelines.component';
 import { RegistrationComponent } from './step/registration/registration.component';
 import { TrainingComponent } from './step/training/training.component';
 import { UserComponent } from './user/user.component';
-import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
+import { UserRegComponent } from './user/user-registration/user-registration.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { FooterComponent } from './footer/footer.component'
-
+import { HttpClientModule } from '@angular/common/http';
+import { RegisterAdminComponent } from './register-admin/register-admin.component';
+import { NgoComponent } from './ngo/ngo.component';
 
 
 @NgModule({
@@ -31,16 +33,19 @@ import { FooterComponent } from './footer/footer.component'
     RegistrationComponent,
     TrainingComponent,
     UserComponent,
-    UserRegistrationComponent,
+    UserRegComponent,
     UserLoginComponent,
-    FooterComponent
+    FooterComponent,
+    RegisterAdminComponent,
+    NgoComponent
   ],
   
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

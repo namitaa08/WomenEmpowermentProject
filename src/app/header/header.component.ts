@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { StepComponent } from '../step/step.component';
-
+// import {Component} from '@angular/core';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  styleUrls: ['./header.component.css'],
+  // selector: 'ngbd-dropdown-basic',
+  // templateUrl: './dropdown-basic.html'
 })
 export class HeaderComponent implements OnInit {
 
@@ -17,4 +19,6 @@ export class HeaderComponent implements OnInit {
 
   this.router.navigateByUrl('./step')
   }
+}
+export class NgbdDropdownBasic {
 }

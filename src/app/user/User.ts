@@ -1,0 +1,30 @@
+export class User
+{username:string="";
+name:string="";
+birthdate:string="";
+password:string="";
+mobileNumber:number=0;
+age:number=0;
+spouseName:string="";
+salary:number=0;
+
+Constructor(username:string,
+name:string,
+birthdate:string,
+password:string,
+mobileNumber:number,
+age:number,
+spouseName:string,
+salary:number,
+)
+{
+    this.username=username;
+    this.name=name;
+    this.birthdate=birthdate;
+    this.password=password;
+    this.mobileNumber=mobileNumber;
+    this.age=age;
+    this.spouseName=spouseName;
+    this.salary=salary
+}
+}

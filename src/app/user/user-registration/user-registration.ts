@@ -1,19 +1,11 @@
-import { Component } from '@angular/core'
+export class UserReg {
 
-
-
-export class UserRegistration {
-
-
-    constructor(
-
-        // ? is set to define that the arguments marked are optional
-        public name?: string,
-        public username?: string,
-        public password?: string,
-        public confirmPassword?: string
-    ) {
-
-    }
-
+    username!:string;
+    name!:string;
+    birthDate!:string;
+    password!:string;
+    mobileNumber!:number;
+    age!:number;
+    spouseName!:string;
+    salary!:number
 }
