@@ -8,7 +8,7 @@ import { UserReg } from './user-registration';
   templateUrl: './user-registration.component.html',
   styleUrls: ['./user-registration.component.css']
 })
-export class UserRegComponent implements OnInit {
+export class UserRegistrationComponent implements OnInit {
 
   userReg:UserReg = new UserReg();
   

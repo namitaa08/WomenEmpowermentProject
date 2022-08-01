@@ -5,7 +5,7 @@ import { RegistrationComponent } from './step/registration/registration.componen
 import { LoginComponent } from './step/login/login.component'
 import { GuidelinesComponent } from './step/guidelines/guidelines.component';
 import { TrainingComponent } from './step/training/training.component';
-import { UserRegComponent } from './user/user-registration/user-registration.component';
+import { UserRegistrationComponent } from './user/user-registration/user-registration.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
 
@@ -19,7 +19,7 @@ const routes: Routes = [
     {path : 'loginsuccess', component:StepComponent},
      {path: 'user/user-login', component: UserLoginComponent},
      {path : 'register-admin', component: RegisterAdminComponent},
-     {path : 'user-registration', component: UserRegComponent}];
+     {path : 'user-registration', component: UserRegistrationComponent}];
     
 
 @NgModule({
