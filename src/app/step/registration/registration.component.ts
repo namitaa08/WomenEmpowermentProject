@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Registration } from './registration';
+import { FileUploader } from 'ng2-file-upload';
+import { StepRegService } from 'src/app/Services/step-reg.service';
+import { UserRegService } from 'src/app/Services/user-service';
+import {  StepReg } from './registration';
 
 @Component({
   selector: 'app-registration',
@@ -7,37 +10,33 @@ import { Registration } from './registration';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent implements OnInit {
+    UploadURL = 'http://localhost:8051/step-api/upload';
+    public uploader: FileUploader = new FileUploader({url:this.UploadURL, itemAlias: 'file'});
+
   router: any;
-  ngOnInit() {
-
-  }
-
-  array = { password: "" };
-
-  keyPress(event: any) {
-      const pattern = /[0-9\+\-\ ]/;
-      let inputChar = String.fromCharCode(event.charCode);
-      if (event.keyCode != 8 && !pattern.test(inputChar)) {
-          event.preventDefault();
+  stepReg:StepReg = new StepReg();
+      
+      
+      constructor(private stepRegService: StepRegService) { }
+    
+      ngOnInit(): void {
+        this.uploader.onAfterAddingFile = (file) => { file.withCredentials = false; };
+        this.uploader.onCompleteItem = (item: any, response: any, status: any, headers: any) => {
+        console.log('FileUpload:uploaded:', item, status, response);
+        alert('File uploaded successfully');
+     };
       }
-  }
+    
+      stepRegister(){
+        console.log(this.stepReg);
+        this.stepRegService.registerStep(this.stepReg).subscribe(data=>{
+          alert("Registration successful!");
+        },error=>alert(""));
+      }
 
-  registration: Registration = new Registration();
-  response!: string;
-  /*constructor(private ngs: RegistrationService) {}
+    
 
-  add() {
 
-      this.ngs.sendToServer(this.registration).subscribe(
-          data => {
-
-              this.response = data['status'];
-              this.reloadPage();
-          }
-      );
-  }
-
-  reloadPage() {
-      window.location.href = './step/success';
-  }*/
-}
+    
+    }
+    
