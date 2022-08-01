@@ -1,1 +1,18 @@
+<div class="container col-md-6">
 
+    <form (ngSubmit)="loginUser()">
+        <div class="mb-3">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" [(ngModel)] = "user.username">
+        </div>
+        <div class="mb-3">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password" [(ngModel)] = "user.password">
+          </div>
+      
+  
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  
+  </div>
+  

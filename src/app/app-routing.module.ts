@@ -17,7 +17,7 @@ const routes: Routes = [
     {path: 'step/login', component: LoginComponent},
     {path : 'step/guidelines', component: GuidelinesComponent},
      {path : 'step/training', component: TrainingComponent},
-    // {path : 'user', component: UserRegComponent},
+    {path : 'loginsuccess', component:StepComponent},
      {path: 'user/user-login', component: UserLoginComponent},
      {path : 'register-admin', component: RegisterAdminComponent},
      {path : 'user-registration', component: UserRegComponent},

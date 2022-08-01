@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Observer } from 'rxjs';
+import { map, Observable, Observer } from 'rxjs';
 import { UserReg } from '../user/user-registration/user-registration';
+import { UserLogin } from '../user/user-login/user-login';
 
 @Injectable({
   providedIn: 'root'
@@ -16,4 +17,5 @@ export class UserRegService {
     console.log(userData);
     return this.httpClient.post(this.baseURL,userData);
   }
+
 }
