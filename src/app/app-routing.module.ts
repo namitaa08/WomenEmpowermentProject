@@ -8,7 +8,8 @@ import { TrainingComponent } from './step/training/training.component';
 import { UserRegComponent } from './user/user-registration/user-registration.component';
 import { UserLoginComponent } from './user/user-login/user-login.component';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
-
+import { NgoComponent } from './ngo/ngo.component';
+import { NgoRegComponent } from './ngo/ngo-register/ngo-register.component';
 
 const routes: Routes = [
     { path: 'step', component: StepComponent},
@@ -19,7 +20,9 @@ const routes: Routes = [
     // {path : 'user', component: UserRegComponent},
      {path: 'user/user-login', component: UserLoginComponent},
      {path : 'register-admin', component: RegisterAdminComponent},
-     {path : 'user-registration', component: UserRegComponent}];
+     {path : 'user-registration', component: UserRegComponent},
+     {path : 'ngo', component: NgoComponent},
+     {path : 'register-ngo', component: NgoRegComponent}];
     
 
 @NgModule({

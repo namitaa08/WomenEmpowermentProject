@@ -19,6 +19,9 @@ import { FooterComponent } from './footer/footer.component'
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
 import { NgoComponent } from './ngo/ngo.component';
+import { NgoRegComponent } from './ngo/ngo-register/ngo-register.component';
+import { NgoLoginComponent } from './ngo/ngo-login/ngo-login.component';
+
 
 
 @NgModule({
@@ -37,7 +40,9 @@ import { NgoComponent } from './ngo/ngo.component';
     UserLoginComponent,
     FooterComponent,
     RegisterAdminComponent,
-    NgoComponent
+    NgoComponent,
+    NgoRegComponent,
+    NgoLoginComponent
   ],
   
   imports: [

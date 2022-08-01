@@ -6,8 +6,6 @@ import { StepComponent } from '../step/step.component';
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  // selector: 'ngbd-dropdown-basic',
-  // templateUrl: './dropdown-basic.html'
 })
 export class HeaderComponent implements OnInit {
 
