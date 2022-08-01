@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgoRegService } from 'src/app/Services/ngo-service';
+import { NgoRegService } from 'src/app/Services/ngo.service';
 
 import { NgoReg } from './ngo-register';
 

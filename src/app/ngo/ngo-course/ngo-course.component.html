@@ -1,0 +1,32 @@
+<div class="container col-md-6">
+
+    <form (ngSubmit)="courseRegister()">
+        <div class="mb-3">
+          <label for="courseId">Course-Id</label>
+          <input type="number" class="form-control" id="courseId" name="courseId" placeholder="Enter courseId" [(ngModel)] = "courseReg.courseId">
+        </div>
+        <div class="mb-3">
+            <label for="courseTrainingSector">Course Training Sector</label>
+            <input type="text" class="form-control" id="courseTrainingSector" name="courseTrainingSector" placeholder="Enter courseTrainingSector" [(ngModel)] = "courseReg.courseTrainingSector">
+          </div>
+          <div class="mb-3">
+            <label for="courseName">Course Name</label>
+            <input type="text" class="form-control" id="courseName" name="courseName" placeholder="Enter courseName" [(ngModel)] = "courseReg.courseName">
+          </div>
+          <div class="mb-3">
+            <label for="courseDetails">Course Details</label>
+            <input type="text" class="form-control" id="courseDetails" name="courseDetails" placeholder="Enter courseDetails" [(ngModel)] = "courseReg.courseDetails">
+          </div>
+          <div class="mb-3">
+            <label for="courseDuration">Course Duration</label>
+            <input type="text" class="form-control" id="courseDuration" name="courseDuration" placeholder="Enter courseDuration" [(ngModel)] = "courseReg.courseDuration">
+          </div>
+          <div class="mb-3">
+            <label for="ngoUserName">NGO Username</label>
+            <input type="text" class="form-control" id="ngoUserName" name="username" placeholder="Enter ngoUserName" [(ngModel)] = "courseReg.username">
+          </div>
+   -->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  
+  </div>

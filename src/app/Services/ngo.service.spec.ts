@@ -1,5 +1,5 @@
 import { TestBed } from '@angular/core/testing';
-import { NgoRegService } from './ngo-service';
+import { NgoRegService } from './ngo.service';
 
 
 describe('NgoRegService', () => {

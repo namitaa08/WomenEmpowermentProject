@@ -21,6 +21,8 @@ import { RegisterAdminComponent } from './register-admin/register-admin.componen
 import { NgoComponent } from './ngo/ngo.component';
 import { NgoRegComponent } from './ngo/ngo-register/ngo-register.component';
 import { NgoLoginComponent } from './ngo/ngo-login/ngo-login.component';
+import { NgoCourseComponent } from './ngo/ngo-course/ngo-course.component';
+
 
 
 
@@ -42,7 +44,8 @@ import { NgoLoginComponent } from './ngo/ngo-login/ngo-login.component';
     RegisterAdminComponent,
     NgoComponent,
     NgoRegComponent,
-    NgoLoginComponent
+    NgoLoginComponent,
+    NgoCourseComponent
   ],
   
   imports: [

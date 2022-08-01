@@ -1,17 +1,17 @@
 <div class="container col-md-6">
 
-    <form (ngSubmit)="ngoRegister()">
+    <form (ngSubmit)="loginNgo()">
         <div class="mb-3">
           <label for="username">Username</label>
-          <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" [(ngModel)] = "ngoReg.username">
+          <input type="text" class="form-control" id="username" name="username" placeholder="Enter username" [(ngModel)] = "ngo.username">
         </div>
         <div class="mb-3">
-            <label for="name">Password</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" [(ngModel)] = "ngoReg.name">
+            <label for="password">Password</label>
+            <input type="text" class="form-control" id="password" name="password" placeholder="Enter Password" [(ngModel)] = "ngo.password">
           </div>
+      
   
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
   
   </div>
-  

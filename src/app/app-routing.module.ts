@@ -10,6 +10,7 @@ import { UserLoginComponent } from './user/user-login/user-login.component';
 import { RegisterAdminComponent } from './register-admin/register-admin.component';
 import { NgoComponent } from './ngo/ngo.component';
 import { NgoRegComponent } from './ngo/ngo-register/ngo-register.component';
+import { NgoCourseComponent } from './ngo/ngo-course/ngo-course.component';
 
 const routes: Routes = [
     { path: 'step', component: StepComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
      {path : 'register-admin', component: RegisterAdminComponent},
      {path : 'user-registration', component: UserRegComponent},
      {path : 'ngo', component: NgoComponent},
-     {path : 'register-ngo', component: NgoRegComponent}];
+     {path : 'ngo-register', component: NgoRegComponent},
+     {path : 'ngo-course', component: NgoCourseComponent}];
     
 
 @NgModule({
